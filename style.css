@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(20, 20, 20);
+}
+
+.projects {
+  height: fit-content;
+  color: black;
+}
+
+.details {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.details > h3,
+.details > p {
+  color: black;
+}
+
+#photography-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 30vw;
+  height: 40vw;
+  background-image: url("./images/photography-site.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
