@@ -9,7 +9,10 @@ body {
   margin: 0px;
   background-color: rgb(20, 20, 20);
 }
-
+h1 {
+  text-align: center;
+  padding: 2rem;
+}
 .content-holder {
   display: flex;
 }
@@ -18,12 +21,16 @@ nav {
   display: none;
 }
 
-nav > ul {
-  display: flex;
+section {
+  min-height: 100vh;
 }
 
-ul {
-  padding: 5px 20px;
+.intro > p {
+  padding: 8rem;
+  font-size: 4rem;
+}
+
+.about-me {
 }
 
 .projects {
@@ -58,6 +65,8 @@ ul {
 
   nav {
     display: block;
+    height: 100vh;
+    /* position: fixed; */
   }
 
   nav > ul {
@@ -65,8 +74,8 @@ ul {
     flex-direction: column;
   }
 
-  ul {
-    padding: 10px 40px;
+  li {
+    padding: 20px 40px;
     list-style-type: none;
   }
 }
