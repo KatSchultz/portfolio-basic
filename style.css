@@ -1,11 +1,29 @@
 * {
   box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
+  margin: 0;
 }
 
 body {
   margin: 0px;
   background-color: rgb(20, 20, 20);
+}
+
+.content-holder {
+  display: flex;
+}
+
+nav {
+  display: none;
+}
+
+nav > ul {
+  display: flex;
+}
+
+ul {
+  padding: 5px 20px;
 }
 
 .projects {
@@ -25,10 +43,30 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 30vw;
-  height: 40vw;
+  width: 80vw;
+  height: 100vw;
   background-image: url("./images/photography-site.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+  .content-holder {
+    display: flex;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    padding: 10px 40px;
+    list-style-type: none;
+  }
 }
