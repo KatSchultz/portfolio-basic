@@ -15,8 +15,8 @@ h1 {
 }
 .content-holder {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  width: 100%;
 }
 
 nav {
@@ -24,12 +24,11 @@ nav {
 }
 
 section {
-  min-height: 100vh;
-  width: 50vw;
+  width: 80vw;
+  padding-bottom: 4rem;
 }
 
 .intro > p {
-  padding: 6rem;
   font-size: 4rem;
 }
 
@@ -43,16 +42,17 @@ section {
 
 .project {
   width: 80vw;
+  padding-bottom: 1rem;
 }
 
 .details {
   background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
-  max-width: 70vw;
+  max-width: 60vw;
   padding: 0.5rem;
   border-radius: 5px;
-  /* width: 80vw; */
+  min-width: fit-content;
 }
 .details > h3,
 .details > p {
@@ -60,18 +60,29 @@ section {
 }
 
 .site-img {
+  min-width: 250px;
   width: 100%;
+  padding: 0.5rem 0;
+}
+
+.project-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-links {
+  display: flex;
+}
+
+.project-links > * {
+  padding-left: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .content-holder {
-    display: flex;
-  }
-
   nav {
     display: block;
     height: 100vh;
-    /* position: fixed; */
+    position: sticky;
   }
 
   nav > ul {
@@ -82,5 +93,9 @@ section {
   li {
     padding: 20px 40px;
     list-style-type: none;
+  }
+
+  .project {
+    max-width: 40vw;
   }
 }
